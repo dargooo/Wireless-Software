@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnBack3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="GoBack"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Date"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextStart2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:ems="10"
+            android:hint="YYYY/MM/DD"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Date"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextEnd2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="YYYY/MM/DD"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/btnMoneyAdded2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Money Added"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnMoneySpent2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:text="Money Spent"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TableRow
+            android:id="@+id/rowNumber"
+            android:layout_width="393dp"
+            android:layout_height="wrap_content"
+            android:background="#727272">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:background="#93ADC1"
+                android:gravity="center"
+                android:text="Number of Transactions"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewNumber"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="#93ADC1"
+                android:gravity="center"
+                android:textColor="#FC050000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#727272">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="Total Amount"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewTotal"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textColor="#FC050000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowAverage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#727272">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:background="#93ADC1"
+                android:gravity="center"
+                android:text="Average Amount"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewAverage"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="#93ADC1"
+                android:gravity="center"
+                android:textColor="#FC050000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowMax"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#727272">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="Maximum Amount"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewMax"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textColor="#FC050000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowMin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#727272">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:background="#93ADC1"
+                android:gravity="center"
+                android:text="Minimun Amount"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewMin"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="#93ADC1"
+                android:gravity="center"
+                android:textColor="#FC050000"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
